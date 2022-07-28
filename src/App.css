@@ -45,7 +45,7 @@ ul {
 
 .left_col li {
   width: 100%;
-  height: 8.1%;
+  height: 8.195%;
   background-color: black;
   color: white;
   border-top: solid 1px white;
@@ -75,7 +75,7 @@ ul {
 .right_col header {
   width: 12400px;
   background-color: black;
-  height: 5%;
+  height: calc(5% + 1px);
 }
 
 .right_col .days {
@@ -84,11 +84,12 @@ ul {
   height: 5.5%;
   margin-top: 0px;
   color: white;
+  margin-left: 1px;
 }
 
 .right_col .days ul {
   padding: 0;
-  height: 30px;
+  height: 100%;
   margin: 0;
   margin-left: -1px;
 }
@@ -97,7 +98,7 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
-  height: 30px;
+  height: 100%;
   position: sticky;
   left: -1px;
   padding-left: 5px;
