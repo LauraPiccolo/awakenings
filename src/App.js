@@ -1,9 +1,11 @@
 import './App.css';
 import { scenes } from './scenes';
 import { arts } from './art';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [overlay, setOverlay] = useState(true);
 
   const x = 'x';
 
@@ -32,8 +34,23 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" onClick={() => setOverlay(false)}>
       <header className="header">♥ ♥ AWAKENING TIMETABLE ♥ ♥</header>
+      {
+        overlay && (
+            <div className='overlay'>
+              <div className='overlay__header'>
+                <div className='overlay__days'>DAYS</div>
+                <div className='overlay__hours'>HOURS</div>
+              </div>
+              <div className='overlay__stages'><p>STAGES</p></div>
+              <div className='overlay__artists'>
+                <p>Scroll left and right<br/>to see the artists!</p>
+                <button>OK</button>
+              </div>
+            </div>
+        )
+      }
       <div className="left_col">
         <ul>
           {
@@ -71,7 +88,7 @@ function App() {
           }
         </ul>
       </div>
-      <footer>by <a href="https://piccolora.de">Laura</a></footer>
+      <footer>Made by <a href="https://piccolora.de">Laura</a></footer>
     </div>
   );
 }
