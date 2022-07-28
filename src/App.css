@@ -5,6 +5,12 @@
   padding: 0;
   width: 100%;
   height: 100%;
+  background-color: black;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;;
 }
 
 * {
@@ -17,24 +23,28 @@ ul {
 }
 
 .left_col {
-  width: 40px;
-  height: 480px;
+  width: 42px;
+  height: 85%;
   position: fixed;
   left: 0;
-  top: 60px;
+  top: 10%;
   margin-top: 0;
+  padding-top: 15.4%;
+  background-color: black;
+  border-right: solid 1px white;
 }
 
 .left_col ul {
   padding: 0;
+  height: 100%;
 }
 
 .left_col li {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 7.7%;
   background-color: black;
   color: white;
-  border: solid 1px white;
+  border-top: solid 1px white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,26 +55,29 @@ ul {
   width: calc(100vw - 42px);
   left: 42px;
   overflow-x: scroll;
-  top: 0;
+  top: 10%;
+  height: 85%;
+  overflow-y: hidden;
 }
 
 .right_col ul {
   width: 12400px;
   background-color: black;
-  height: 520px;
+  height: 90%;
   margin-top: 0;
+  position: relative;
 }
 
 .right_col header {
   width: 12400px;
   background-color: black;
-  height: 30px;
+  height: 5%;
 }
 
 .right_col .days {
   background-color: black;
   width: 12400px;
-  height: 30px;
+  height: 5.5%;
   margin-top: 0px;
   color: white;
 }
@@ -84,22 +97,23 @@ ul {
   position: sticky;
   left: -1px;
   padding-left: 5px;
-  border-left: 1px solid white;
+  /* border-top: solid 1px white; */
+  border-left: 1px solid grey;
 }
 
 .right_col .days ul li:nth-child(1) {
   width: 3200px;
-  background-color: #ff3834;
+  background-color: #c00371;
   z-index: 10;
 }
 .right_col .days ul li:nth-child(2) {
   width: 4600px;
-  background-color: #ff3834;
+  background-color: #c00371;
   z-index: 20;
 }
 .right_col .days ul li:nth-child(3) {
   width: 300px;
-  background-color: #ff3834;
+  background-color: #c00371;
   z-index: 30;
 }
 
@@ -108,86 +122,108 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
-  border: solid 1px white;
+  border-left: solid 1px grey;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey;
   color: white;
   padding-left: 5px;
-  height: 30px;
+  height: 130%;
+  margin-top: -0.5%;
 }
 
 .art {
-  border: solid 1px #ff3834;
-  color: #ff3834;
+  border: solid 1px #c00371;
+  color: #c00371;
   background-color: white;
   position: absolute;
-  height: 40px;
+  height: 7.7%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
   padding: 0 5px;
 }
 
 .header {
-  color: #ff3834;
+  background-image: url(../public/bg.png);
+  background-size: cover;
   width: 100vw;
-  height: 30px;
-  border-top: solid 1px #ff3834;
-  background-color: white;
+  height: 10%;
+  border-bottom: solid 1px white;
+  color: white;
   position: fixed;
-  bottom: 0;
+  top: 0;
   text-align: center;
-  line-height: 27px;
+  line-height: 9vh;
+  z-index: 1000;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  color: white;
+  text-align: left;
+  padding: 0 10px;
+  height: 5%;
+  width: 100vw;
+  border-top: solid 1px white;
+  line-height: 4.5vh;
+  background-image: url(../public/bg.png);
+  background-size: cover;
+}
+
+footer a {
+  color: white;
 }
 
 .art--V {
-  top: 40px;
+  top: 0%;
   border-top: none !important;
 }
 
 .art--W {
-  top: 80px;
+  top: 7.7%;
 }
 
 .art--X {
-  top: 120px;
+  top: 15.4%;
 }
 
 .art--Y {
-  top: 160px;
+  top: 23.1%;
 }
 
 .art--U {
-  top: 200px;
+  top: 30.8%;
 }
 
 .art--A {
-  top: 240px;
+  top: 38.5%;
 }
 
 .art--B {
-  top: 280px;
+  top: 46.2%;
 }
 
 .art--C {
-  top: 320px;
+  top: 53.9%;
 }
 
 .art--D {
-  top: 360px;
+  top: 61.6%;
 }
 
 .art--H {
-  top: 400px;
+  top: 69.3%;
 }
 
 .art--S {
-  top: 440px;
+  top: 77%;
 }
 
 .art--Kc {
-  top: 480px;
+  top: 84.7%;
 }
 
 .art--Nc {
-  top: 520px;
+  top: 92.4%;
 }

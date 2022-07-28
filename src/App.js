@@ -1,6 +1,7 @@
 import './App.css';
 import { scenes } from './scenes';
 import { arts } from './art';
+import { useEffect } from 'react';
 
 function App() {
 
@@ -15,7 +16,6 @@ function App() {
     const nextDate = new Date(2022, 6, 28+Number(time.split('.')[0]), time.split('.')[1], time.split('.')[2])
     const diff = nextDate.getTime() - firstDate.getTime();
     const left = diff / 18000;
-    console.log('left : '+left)
     return `${left}px`;
   }
 
@@ -24,9 +24,12 @@ function App() {
     const nextDate = new Date(2022, 6, 28+Number(end.split('.')[0]), end.split('.')[1], end.split('.')[2])
     const diff = nextDate.getTime() - firstDate.getTime();
     const width = diff / 18000;
-    console.log('width : '+width)
     return `${width}px`;
   }
+
+  useEffect(() => {
+    document.querySelector('.App').style.height = `${window.innerHeight}px`;
+  }, []);
 
   return (
     <div className="App">
@@ -68,6 +71,7 @@ function App() {
           }
         </ul>
       </div>
+      <footer>by <a href="https://piccolora.de">Laura</a></footer>
     </div>
   );
 }
