@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="App" onClick={() => setOverlay(false)}>
-      <header className="header">♥ ♥ AWAKENING TIMETABLE ♥ ♥</header>
+      <header className="header">♥ ♥ AWAKENINGS TIMETABLE ♥ ♥</header>
       {
         overlay && (
             <div className='overlay'>
