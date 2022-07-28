@@ -131,8 +131,8 @@ ul {
   border-bottom: solid 1px grey;
   color: white;
   padding-left: 5px;
-  height: 140%;
-  margin-top: -0.5%;
+  height: 100%;
+  margin-top: 0px;
 }
 
 .art {
@@ -241,13 +241,13 @@ footer a {
 }
 
 .overlay__header {
-  height: 10%;
-  padding-left: 40px;
+  height: calc(10% + 1px);
+  padding-left: 41px;
   color: #c00371 !important;
 }
 
 .overlay__header div {
-  height: 50%;
+  height: 45%;
   background-color: rgba(255,255,255,0.9);
   display: flex;
   align-items: center;
@@ -256,11 +256,12 @@ footer a {
 
 .overlay__days {
   border-bottom: solid 1px #c00371;
+  height: 55% !important;
 }
 
 .overlay__stages {
   height: 90%;
-  top: 0;
+  margin-top: 1px;
   width: 40px;
   display: inline-flex;
   align-items: center;
@@ -274,7 +275,7 @@ footer a {
 }
 
 .overlay__artists {
-  height: 90%;
+  height: calc(90% + 1px);
   display: inline-flex;
   background-color: rgba(255,255,255,0.9);
   top: 0;
