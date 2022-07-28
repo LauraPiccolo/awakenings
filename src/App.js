@@ -88,7 +88,7 @@ function App() {
           }
         </ul>
       </div>
-      <footer>Made by <a href="https://piccolora.de">Laura</a></footer>
+      <footer>Made by <a target="_blank" href="https://piccolora.de">Laura</a></footer>
     </div>
   );
 }
